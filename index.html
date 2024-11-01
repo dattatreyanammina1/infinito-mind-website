@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INFINITO MIND</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/60fbac4dd6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </head>
 <body>
     <!-- Header Section with Navigation -->
@@ -27,22 +25,22 @@
 
         <!-- Hamburger Menu Icon for Mobile -->
         <div class="menu-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <!-- Navigation Links -->
-        <nav>
-            <ul class="navbar">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  
+      <!-- Navigation Links -->
+      <nav>
+          <ul class="navbar">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+          </ul>
+      </nav>
+  </header>
 
     <!-- Home Section -->
     <section id="home">
@@ -78,7 +76,7 @@
     <section id="services">
       <h2>Our Services</h2>
       <div class="services-container">
-        <div class="card">
+        <div class="card" style="height: 293px;">
           <div class="card-icon"><i class="bi bi-circle"></i></div>
           <div class="card-body">
             <p class="card-title">AR/VR Technology into Education</p>
@@ -86,14 +84,14 @@
           </div>
         </div>
         <div class="card">
-          <div class="card-icon"><i class="bi bi-circle"></i></div>
+          <div class="card-icon"><i class="bi bi-triangle"></i></div>
           <div class="card-body">
             <p class="card-title">Apex Prep</p>
             <a href="details.html?id=2" class="btn btn-outline-light">Learn More</a>
           </div>
         </div>
         <div class="card">
-          <div class="card-icon"><i class="bi bi-circle"></i></div>
+          <div class="card-icon"><i class="bi bi-square"></i></div>
           <div class="card-body">
             <p class="card-title">Leaners Persona</p>
             <a href="details.html?id=3" class="btn btn-outline-light">Learn More</a>
@@ -122,22 +120,22 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                           </div>
                         </div>
                         <div class="col-md-12"> 
                           <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
@@ -263,20 +261,14 @@
             <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
             <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
       </div>
     </section>
-    <!-- Section: Links  -->
   
-    <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright: Infinito Mind
     </div>
-    <!-- Copyright -->
   </footer>
-  <!-- Footer -->
 
 </body>
 </html>

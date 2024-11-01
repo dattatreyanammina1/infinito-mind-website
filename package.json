@@ -3,6 +3,7 @@
     "@hint/hint-no-inline-styles": "^1.0.19"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0"
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "bootstrap-icons": "^1.11.3"
   }
 }
