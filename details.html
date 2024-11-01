@@ -1,0 +1,51 @@
+<!-- details.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 id="card-title">Card Title</h1>
+      <p id="card-description">Card description will go here.</p>
+      <a href="index.html" class="back-button">Back to Main Page</a>
+    </div>
+
+    <script>
+      // Object containing details for each card
+      const cardData = {
+        1: {
+          title: "AR/VR Technology into Education",
+          description:
+            "Infinito Mind is an innovative ed-tech company committed to revolutionizing education by integrating cutting-edge Augmented Reality (AR) and Virtual Reality technologies...",
+        },
+        2: {
+          title: "Apex Prep",
+          description: "Integrating Competitive Syllabus with Liberal Arts Curricula.",
+        },
+        3: {
+          title: "Learners Persona",
+          description: "Student Profiling.",
+        },
+      };
+
+      // Function to retrieve the URL parameter
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Load content based on the card ID
+      const cardId = getQueryParam("id");
+      if (cardData[cardId]) {
+        document.getElementById("card-title").textContent = cardData[cardId].title;
+        document.getElementById("card-description").textContent = cardData[cardId].description;
+      } else {
+        document.getElementById("card-title").textContent = "Card Not Found";
+        document.getElementById("card-description").textContent = "The card you are looking for does not exist.";
+      }
+    </script>
+  </body>
+</html>

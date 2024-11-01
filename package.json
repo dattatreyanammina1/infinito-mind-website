@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@hint/hint-no-inline-styles": "^1.0.19"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0"
+  }
+}
